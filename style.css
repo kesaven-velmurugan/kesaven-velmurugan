@@ -1,0 +1,134 @@
+
+.button{
+	display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+ .button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+input{
+	display:block;
+	width:100%;
+	border-radius: 4px;
+	margin: 5px;
+	font-size: 15px;
+	background-color:#f1f1f1;
+	
+}
+input:focus{
+	background-color:white;
+}
+
+
+
+.form{
+	position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color:gray;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.form2{
+	position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 500px;
+  margin: 0 auto 100px;
+  padding: 70px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+#corner1{
+	margin:100px;
+	border-radius: 15px 50px;
+    background-image:url("k7.jpg");
+	background-size:cover;
+    padding: 20px; 
+    width: 350px;
+    height: 250px; 
+}
+#corner2{
+	margin:100px;
+	border-radius: 15px 50px;
+    background-image:url("madan.jpg");
+	background-size:cover;
+    padding: 20px; 
+    width: 350px;
+    height: 250px; 
+}
+#corner3{
+	margin:100px;
+	border-radius: 15px 50px;
+    background-image:url("joe.jpg");
+	background-size:cover;
+    padding: 20px; 
+    width: 350px;
+    height: 250px; 
+}
+
+.col{
+    column-count: 2;
+    column-gap: 40px;
+    
+}
